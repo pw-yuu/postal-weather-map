@@ -26,6 +26,5 @@ export default function Map({ lat, lng, zoom }) {
                 onClick={(e) => console.log(e)}
             ></GoogleMap>
         </div>
-
     );
 };

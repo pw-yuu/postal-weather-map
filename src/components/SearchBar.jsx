@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function SearchBar({ getPostcode, getCity }) {
+export default function SearchBar({ getPostcode, getCity, getWeather}) {
     const [postcode, setPostcode] = useState();
 
     return (
@@ -14,10 +14,12 @@ export default function SearchBar({ getPostcode, getCity }) {
                 onClick={() => {
                     getPostcode(postcode);
                     getCity(postcode);
+                    getWeather();
                 }}
             >
                 Submit
             </button>
+            
         </div>
     );
 };

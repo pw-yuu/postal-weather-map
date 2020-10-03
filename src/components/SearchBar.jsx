@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function SearchBar({ getPostcode, getCity, getWeather}) {
+export default function SearchBar({ getCity }) {
     const [postcode, setPostcode] = useState();
 
     return (
@@ -12,9 +12,7 @@ export default function SearchBar({ getPostcode, getCity, getWeather}) {
             />
             <button
                 onClick={() => {
-                    getPostcode(postcode);
                     getCity(postcode);
-                    getWeather();
                 }}
             >
                 Submit

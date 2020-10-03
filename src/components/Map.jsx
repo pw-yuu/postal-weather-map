@@ -17,6 +17,8 @@ export default function Map({ lat, lng, zoom }) {
     if (loadError) return 'Error loading maps';
     if (!isLoaded) return 'Loading Maps';
 
+    
+
     return (
         <div>
             <GoogleMap

@@ -17,9 +17,6 @@ export default function App() {
 	const [zoom, setZoom] = useState(10);
 	const [error, setError] = useState(null);
 
-
-
-
 	async function getCity(postcodeInput) {
 		try {
 			const res = await axios.get(`https://maps.googleapis.com/maps/api/geocode/json?components=postal_code:${postcodeInput}|country:JP&key=${MAP_KEY}`);

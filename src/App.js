@@ -17,7 +17,7 @@ import positionIcon from './img/location.svg';
 const MAP_KEY = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
 export default function App() {
-	// const [mount, getMounted] = useState(true);
+	const [mount, getMounted] = useState(true);
 	const [location, setLocation] = useState('');
 	const [error, setError] = useState(null);
 	const [zoom, setZoom] = useState(12);
@@ -43,7 +43,7 @@ export default function App() {
 				lng: lng
 			});
 			setError('');
-			// getMounted(false);
+			getMounted(false);
 			setZoom(14);
 		} catch (err) {
 			setError('Postal code invalid. Please input a code with 7 digits or an existing one.');
@@ -64,7 +64,7 @@ export default function App() {
 					lng: position.coords.longitude
 				});
 				setLocation(geoLocation);
-				// getMounted(false);
+				getMounted(false);
 				setZoom(14);
 			});
 		};
@@ -77,9 +77,9 @@ export default function App() {
 
 	return (
 		<div className="App">
-			{/* {mount ?
+			{mount ?
 				<div>Loading</div>
-				: */}
+				:
 				<main>
 					<Header />
 					<article className="main-area">
@@ -115,7 +115,7 @@ export default function App() {
 
 					<div className="sun"></div>
 				</main>
-			{/* } */}
+			}
 		</div>
 	);
 };

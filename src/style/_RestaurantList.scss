@@ -1,0 +1,48 @@
+@import './colors';
+
+div.store-area {
+    height: 48%;
+    overflow-y: auto;
+    margin: 1rem;
+
+
+    div.restaurant-list {
+        display: flex;
+        align-items: center;
+        font-size: 1.6rem;
+        padding: 3rem;
+        margin: 0 4rem;
+        justify-content: center;
+        border-bottom: 1px solid black;
+        
+    
+        div.restaurant-details {
+            width: 80%;
+            line-height: 2.5rem;
+            margin-left: 3rem;
+            div.name-price-rating {
+                display: flex;
+                justify-content: space-between;
+    
+                span.res-name {
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+                p.rating {
+                    color: $white;
+                    background: rgb(218, 190, 32);
+                    padding: 0.5rem 0.7rem;
+                    border-radius: 1rem;
+                }
+            }
+
+            p.types {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+div.store-area::-webkit-scrollbar {
+    display: none;
+}

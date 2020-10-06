@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 
+//img
+import searchIcon from '../img/search.svg';
+
 export default function SearchBar({ getCity }) {
     const [postcode, setPostcode] = useState();
 
     return (
-        <div>
+        <div className="search-form">
             <input
                 type="number"
                 onChange={(e) => setPostcode(e.target.value)}
@@ -15,9 +18,8 @@ export default function SearchBar({ getCity }) {
                     getCity(postcode);
                 }}
             >
-                Submit
+                <img src={searchIcon} alt="search_icon"/>
             </button>
-            
         </div>
     );
 };

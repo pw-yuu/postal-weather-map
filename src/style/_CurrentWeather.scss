@@ -1,0 +1,22 @@
+@import './colors';
+
+div.current-weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    font-size: 2rem;
+    background: #62768f48;
+    padding: 2rem 2rem 2rem 0;
+
+    img {
+        height: 15rem;
+    }
+
+    div.temp-details {
+        margin-left: 1rem;
+        p.curr-temp {
+            font-size: 6rem;
+        }
+    }
+}

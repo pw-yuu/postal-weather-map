@@ -1,0 +1,78 @@
+@import "./Header.scss";
+@import "./SearchBar";
+@import "./btn";
+@import "./CurrentWeather";
+@import "./Weather";
+@import "./RestaurantList";
+
+html {
+    font-size: 10px;
+    background: lightcyan;
+}
+
+
+
+article.main-area {
+    margin: 30px auto;
+    display: flex;
+    height: 80vh;
+    width: 80%;
+    max-width: 1440px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px rgba(35, 64, 117, 0.4);
+    
+}
+
+div.temp-area {
+    width: 40%;
+    background-image: url(../img/side4.jpg);
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 3rem;
+
+    section.search-area {
+        height: 15%;
+        padding: 4rem;
+
+        div.search-position {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    section.current-area {
+        height: 42.5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4rem;
+
+        div.curr-date-loc {
+            align-self: flex-start;
+            color: $white;
+            font-size: 2rem;
+            letter-spacing: 0.3rem;
+            line-height: 3rem;
+        }
+
+    }
+
+    section.forecast-area {
+        height: 42.5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+}
+
+section.map-area {
+    height: 100%;
+    width: 60%;
+    background: $white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

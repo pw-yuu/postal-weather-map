@@ -4,7 +4,7 @@ div.search-form {
     display: flex;
     input {
         height: 5rem;
-        width: 20rem;
+        width: 85%;
         background: none;
         border: none;
         border-bottom: 2px solid $white;
@@ -17,6 +17,7 @@ div.search-form {
     }::placeholder {
         color: $white;
         opacity: 0.6;
+        font-size: 1.4rem;
     }:focus::placeholder {
         color: $white;
         opacity: 0.4;

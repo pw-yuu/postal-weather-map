@@ -101,7 +101,10 @@ export default function App() {
 							</section>
 
 							<section className="forecast-area">
-								<Weather latlng={latlng}/>
+								<p className="forecast-title">3-day forecast:</p>
+								<div className="weather-card">
+									<Weather latlng={latlng}/>
+								</div>
 							</section>
 						</div>
 						<section className="map-area">
@@ -110,6 +113,7 @@ export default function App() {
 						</section>
 					</article>
 
+					<div className="sun"></div>
 				</main>
 			}
 		</div>

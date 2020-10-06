@@ -11,7 +11,7 @@ export default function SearchBar({ getCity }) {
             <input
                 type="number"
                 onChange={(e) => setPostcode(e.target.value)}
-                placeholder="Input postcal code"
+                placeholder="Input postcal code. ex: 1600022"
             />
             <button
                 onClick={() => {

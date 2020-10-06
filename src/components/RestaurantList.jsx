@@ -25,9 +25,10 @@ export default function RestaurantList({ latlng }) {
 
 					<div className="restaurant-details">
 						<div className="name-price-rating">
-							<p><span className="res-name">{e.name}</span> {pricing(e.price_level)}</p>
+							<p><span className="res-name">{e.name}</span> </p>
 							{e.rating ? <p className="rating">{e.rating}/5</p> : null}
 						</div>
+						<p>{pricing(e.price_level)}</p>
 
 						<p>{e.vicinity}</p>
 						<p className="types">{e.types.map((type, index) => (index === e.types.length - 1? <span key={index}>{type.replace(/_/g, ' ')}</span> : <span key={index}>{type.replace(/_/g, ' ')}, </span>))}</p>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 export default function CurrentDate() {
 
@@ -16,7 +16,7 @@ export default function CurrentDate() {
         let month = newDate.getMonth() + 1;
         let year = newDate.getFullYear();
         
-        return `${year}${separator}${month<10?`0${month}`:`${month}`}${separator}${date}`
+        return `${year}${separator}${month<10?`0${month}`:`${month}`}${separator}${date}`;
     };
 
     return (

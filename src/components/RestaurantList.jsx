@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 //img
-import notfound from '../img/notfound.png'
+import notfound from '../img/notfound.png';
 
 export default function RestaurantList({ latlng }) {
 	const [allRestaurants, setAllRestaurants] = useState([]);
@@ -14,8 +14,8 @@ export default function RestaurantList({ latlng }) {
 			setAllRestaurants(data);
 		} catch (err) {
 			console.log('Could not find any restaurants', err);
-		}
-	}
+		};
+	};
 
 	function showRestaurants() {
 		return allRestaurants.map((e, i) => {

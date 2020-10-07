@@ -30,7 +30,6 @@ export default function App() {
 		try {
 			setZoom(10);
 			const res = await axios.get(`https://maps.googleapis.com/maps/api/geocode/json?components=postal_code:${postcodeInput}|country:JP&key=${MAP_KEY}`);
-	
 			const data = res.data.results[0];
 			const prefecture = data.address_components[3].long_name;
 			const ward = data.address_components[2].long_name;
@@ -52,12 +51,9 @@ export default function App() {
 
 	function getLocation() {
 		if(navigator.geolocation) {
-			console.log('heeee');
 			setZoom(10);
 			navigator.geolocation.getCurrentPosition(async function(position) {
-
 				const res = await axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${position.coords.latitude},${position.coords.longitude}&key=${MAP_KEY}`);
-				console.log('from get locaio', position.coords.latitude, position.coords.longitude);
 				const geoLocation = res.data.plus_code.compound_code;
 				setLatlng({
 					lat: position.coords.latitude,
@@ -69,7 +65,7 @@ export default function App() {
 			});
 		};
 
-	}
+	};
 
 	useEffect(() => {
 		getCity(1600022);

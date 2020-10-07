@@ -6,16 +6,11 @@ button {
     padding: 1.3rem;
     background: none;
     border: none;
-    // border-radius: 30px;
-    // font-size: 1.6rem;
     border-bottom: 2px solid $white;
-    // color: $dark-turquoise;
-    // background: $white;
     outline: none;
 
 }
 button:hover {
-    // background: #7e7e7e;
     color: $primary-purple;
     border-bottom: 2px solid $primary-blue;
     background: $primary-blue;

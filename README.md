@@ -1,8 +1,64 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## TenkiChi
 
-In the project directory, you can run:
+<img src="./src/img/tenkichi-screenshot.png" width="1080px">
+
+## About TenkiChi
+Web app giving you the weather and nearby stores around you with a postal code.
+
+Input your desired postal code in the search form and click on the search icon to look for a place. You can also use the geolocalisation button to get your current position.
+
+This web app only works for Japanese postal code and it has to be in following format.
+
+ex: 1600022, 0691300, 1010032, etc.
+
+You can access the web app with the link below:
+https://tenkichijp.herokuapp.com/
+
+
+### API used
+- Google Map
+- Google Geolocation
+- Google Places
+- Weatherbit.io
+
+### Tech Stack
+- Javascript
+- Node Js
+- Express
+- React Js
+- Sass
+
+## Getting Started
+
+The following commands are useful for running the application locally.
+
+### Install
+
+Install all required dependencies
+```
+yarn install
+```
+
+### Run locally
+Start the application locally (default: localhost:3000)
+
+```
+yarn serve
+```
+### Run server locally
+Start the application's server locally (default: localhost:9000)
+
+```
+yarn start
+```
+### Build the app for production
+bundles React in production mode and optimizes the build for the best performance. 
+
+```
+yarn build
+```
 
 ### `yarn start`
 
@@ -21,48 +77,3 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
